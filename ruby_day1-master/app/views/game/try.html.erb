@@ -1,0 +1,15 @@
+<h1>Hi/Lo Game</h1>
+
+Hello <%= cookies[:name] %>!<br />
+Your guess is <%= params[:guess] %><br />
+<%= @result %><br />
+<%= cookies[:counter] %>
+
+<form class="" action="try" method="get">
+  <label for="name" title="Name">Name</label>
+  <input type="text" name="name" value=<%= cookies[:name] %>  >
+  <label for="number" title="Number">Number</label>
+  <input type="number" name="guess" value="">
+
+  <input type="submit" name="" value="Submit Number">
+</form>
