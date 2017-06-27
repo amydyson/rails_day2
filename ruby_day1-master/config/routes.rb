@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/try" => "game#try"
   get "/new_game" => "game#reset"
   get "/check_password" => "password#check"
+  get "/form" => "pjmask#form"
 end

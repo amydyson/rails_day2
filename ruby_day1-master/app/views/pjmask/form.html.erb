@@ -1,0 +1,34 @@
+<h1>Pj Check</h1>
+
+<form class="" action="form" method="get">
+  <fieldset>
+  <legend align="cen">PjMask</legend>
+  <label for="full_name">Name</label>
+  <input type="text" name="full_name" value="" autofocus><br />
+  <label for="user">User Name</label>
+  <input type="text" name="user" value=""><br />
+  <label for="password">Password</label>
+  <input type="password" name="password" value=""><br />
+  <label for="email">Email</label>
+  <input type="email" name="email" value="" placeholder="name@email.com"><br />
+  <input type="radio" name="group1" value="Catboy" id="catboy"checked>
+  <label for="catboy"><%= image_tag "catboy.png", :size => "158x298" %></label>
+  <input type="radio" name="group1" value="Owlette" id = "owlette"> <label for "owlette"><%= image_tag "owlette.jpg", :size => "190x298" %></label>
+  <label for "geico"><input type="radio" name="group1" value="Geico" id = "geico"><%= image_tag "geico.png", :size => "158x298" %></label><br />
+  <br />
+
+  <label for="comment">Comment</label>
+  <%= text_area_tag 'comment', @comment %>
+  <textarea name="comment" placeholder = "Enter text here"></textarea>
+  </fieldset>
+
+
+  <input type="submit" value="Submit">
+</form>
+
+    <%= @full_name %><br />
+    <%= @user %><br />
+    <%= @password %><br />
+    <%= @email %><br />
+    <%= @character %><br />
+    <%= @message %>
